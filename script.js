@@ -15,7 +15,8 @@ function bildCard() {
     let b = Math.floor(Math.random()*11)
     
     let question = document.querySelector("#card > h2");
-    question.innerHTML = `select the right answer:\n <spam style= "color: red"> ${a} * ${b} <spam/>`
+    question.innerHTML = `select the right answer:
+         <h3 style= "color: red"> ${a} * ${b} <h3/>`
     
     rightAns = a*b;
     let arreyAns = [rightAns, rightAns - a, rightAns + 2, rightAns + b];
@@ -51,7 +52,7 @@ button.onclick = () => {
         let card = document.getElementById("card");
         card.innerHTML = 
             `YOUR SCORE is \n
-                <h1 style = "color: red; font-sise: 10rem">${score}<h1/>  
+                <h3 style = "color: red; font-sise: 10rem">${score}<h3/>  
             ${(score==12)?"Exelent WORK": (score>9)? "Good Work": (score > 6)? "So-so work": "Terrible Work"}
             `
         button.textContent = "restart";
