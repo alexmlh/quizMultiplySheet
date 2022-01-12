@@ -1,14 +1,14 @@
+let rightAns;
+let currentStep = 0;
+let score = 0;
+
 for(i = 1; i < 13; i++) {
     let div = document.createElement("div");
     div.textContent = i;
     div.classList.add("number");
     document.getElementById("resalts").append(div)
-    console.log(div)
 }
 
-let rightAns;
-let currentStep = 0;
-let score = 0;
 
 function bildCard() {
     let a = Math.floor(Math.random()*11)
@@ -16,7 +16,7 @@ function bildCard() {
     
     let question = document.querySelector("#card > h2");
     question.innerHTML = `select the right answer:
-         <h3 style= "color: red"> ${a} * ${b} <h3/>`
+         <span style= "color: red"> ${a} * ${b} </span>`
     
     rightAns = a*b;
     let arreyAns = [rightAns, rightAns - a, rightAns + 2, rightAns + b];
@@ -66,9 +66,3 @@ button.onclick = () => {
     currentStep++;
     bildCard();
 }
-
-
-
-
-
-// console.log(rightAns );
