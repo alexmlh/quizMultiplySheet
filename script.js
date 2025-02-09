@@ -12,14 +12,14 @@ for(i = 1; i < 13; i++) {
 
 function bildCard() {
     let a = Math.floor(Math.random()*11)
-    let b = Math.floor(Math.random()*11)
+    let b = Math.floor(Math.random()*10 + 1)
     
     let question = document.querySelector("#card > h2");
     question.innerHTML = `select the right answer:
          <span style= "color: red"> ${a} * ${b} </span>`
     
     rightAns = a*b;
-    let arreyAns = [rightAns, rightAns - a, rightAns + 2, rightAns + b];
+    let arreyAns = [rightAns, rightAns - a, Math.floor(Math.random()*80 + 1) , rightAns + b];
     arreyAns.sort(() => Math.random()-0.5).forEach((a,i) => {
         if(a<0) arreyAns[i] = -a;
     })
