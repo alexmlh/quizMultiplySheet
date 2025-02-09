@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,7 +64,7 @@ label {
     border-radius: 50%;
     text-align: center;
     padding: .3rem;
-    font-size: 2rem;
+    font-size: 1rem;
     margin-bottom: .5rem;
     box-shadow: 0 0 10px black;
 }
