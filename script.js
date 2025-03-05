@@ -11,8 +11,8 @@ for(i = 1; i < 13; i++) {
 
 
 function bildCard() {
-    let a = Math.floor(Math.random()*11)
-    let b = Math.floor(Math.random()*10 + 1)
+    let a = Math.floor(Math.random()*10 + 1)
+    let b = Math.floor(Math.random()*11)
     
     let question = document.querySelector("#card > h2");
     question.innerHTML = `select the right answer:
